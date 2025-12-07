@@ -1,0 +1,22 @@
+#
+# setup logic
+setup:
+ dir: setup # setup directory
+ data_dict: mdb05_data_dict.ods # data dictionaries for save tables
+ povr_calc: povr_ratings_calc.pkl # OVR ratings calculator
+ pimp_calc: pimp_ratings_calc.pkl # IMP ratings calculator
+
+# game saves
+saves:
+ dir: saves # saves directory
+ import: DEFAULT # prefix name of input save data
+ export: UPDATED # prefix name of output save data
+
+# game updates
+updates:
+ dir: updates # updates directory
+ miss: PLAY_MISS_UPD.csv # default roster bio updates
+ caps: PLAY_CAPS_UPD.csv # CAPS
+ drop: PLAY_DROP_UPD.csv # players to remove
+ rate: PLAY_RATE_UPD.csv # manual ratings updates
+ txss: PLAY_TXS_UPD_20040901.csv # finalized transaction data
